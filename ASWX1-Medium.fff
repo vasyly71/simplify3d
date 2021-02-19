@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="ASWX1 Medium" version="2021-02-18 22:04:33" app="S3D-Software 4.1.2">
+<profile name="ASWX1 Medium" version="2021-02-19 00:38:09" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
-  <printMaterial>PETG Overture</printMaterial>
+  <printMaterial>Breathe-3dp Zenith Copolyester</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -9,7 +9,7 @@
     <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
     <width>0.48</width>
-    <extrusionMultiplier>0.89</extrusionMultiplier>
+    <extrusionMultiplier>0.82</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>-0.01</extraRestartDistance>
@@ -90,7 +90,7 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="240"/>
+    <setpoint layer="1" temperature="235"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -246,9 +246,9 @@
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="Breathe-3dp Zenith Copolyester">
-    <globalExtruderTemperature>240</globalExtruderTemperature>
+    <globalExtruderTemperature>235</globalExtruderTemperature>
     <globalBedTemperature>90</globalBedTemperature>
-    <globalExtrusionMultiplier>0.98</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.82</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="30"/>

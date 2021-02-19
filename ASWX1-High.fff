@@ -246,9 +246,9 @@
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="Breathe-3dp Zenith Copolyester">
-    <globalExtruderTemperature>240</globalExtruderTemperature>
+    <globalExtruderTemperature>235</globalExtruderTemperature>
     <globalBedTemperature>90</globalBedTemperature>
-    <globalExtrusionMultiplier>0.98</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.82</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="30"/>

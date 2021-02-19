@@ -263,4 +263,19 @@
       <setpoint layer="3" speed="30"/>
     </fanSpeed>
   </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA Pro Overture">
+    <globalExtruderTemperature>220</globalExtruderTemperature>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="80"/>
+      <setpoint layer="2" temperature="60"/>
+    </temperatureController>
+    <globalExtrusionMultiplier>0.89</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
 </profile>

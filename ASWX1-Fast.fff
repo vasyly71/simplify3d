@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="ASWX1 Fast" version="2021-02-18 20:51:15" app="S3D-Software 4.1.2">
+<profile name="ASWX1 Fast" version="2021-02-19 17:33:05" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
-  <printMaterial>PETG Overture</printMaterial>
+  <printMaterial>PLA Pro Overture</printMaterial>
   <printQuality>Fast</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -90,17 +90,18 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="240"/>
+    <setpoint layer="1" temperature="220"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="90"/>
+    <setpoint layer="1" temperature="80"/>
+    <setpoint layer="2" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="3" speed="30"/>
+    <setpoint layer="3" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -142,7 +143,7 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,M117 Purge extruder,G92 E0 ; reset extruder,G1 Z1.0 F3000 ; move z up little to prevent scratching of surface,G1 X2 Y20 Z0.3 F5000.0 ; move to start-line position,G1 X2 Y200.0 Z0.3 F1500.0 E15 ; draw 1st line,G1 X2 Y200.0 Z0.4 F5000.0 ; move to side a little,G1 X2 Y20 Z0.4 F1500.0 E30 ; draw 2nd line,G92 E0 ; reset extruder,G1 Z1.0 F3000 ; move z up little to prevent scratching of surface,</startingGcode>
+  <startingGcode>G28 ; home all axes,M117 Purge extruder,G92 E0 ; reset extruder,G1 Z1.0 F3000 ; move z up little to prevent scratching of surface,G1 X2 Y20 Z0.3 F5000.0 ; move to start-line position,G1 X2 Y200.0 Z0.3 F1500.0 E15 ; draw 1st line,G1 X2 Y200.0 Z0.4 F5000.0 ; move to side a little,G1 X2 Y20 Z0.4 F1500.0 E30 ; draw 2nd line,G92 E0 ; reset extruder,G1 Z1.0 F3000 ; move z up little to prevent scratching of surface,M204 P1000.00 R10000.00 T2000.00 ; lower acceleration,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -278,5 +279,4 @@
       <setpoint layer="3" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
-
 </profile>
